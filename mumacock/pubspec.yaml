@@ -34,6 +34,9 @@ dependencies:
   http: ^0.13.4
   # For singleton instance registering
   get_it: ^7.2.0
+  #For Colors
+  hexcolor: ^2.0.7
+  material_color_generator: ^1.1.0
 
 
   # The following adds the Cupertino Icons font to your application.

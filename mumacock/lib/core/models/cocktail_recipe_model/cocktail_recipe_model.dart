@@ -80,8 +80,65 @@ class CocktailRecipeModel extends BaseModel {
 
   CocktailRecipeModel fromJson(Map<String, dynamic> data) {
     final idDrink = data['idDrink'];
+
+    final strDrink = data['strDrink'];
+    final strTags = data['strTags'];
+    final strVideo = data['strVideo'];
+    final strCategory = data['strCategory'];
+    final strIBA = data['strIBA'];
+    final strAlcoholic = data['strAlcoholic'];
+    final strGlass = data['strGlass'];
     final strInstructions = data['strInstructions'];
+    final strInstructionsES = data['strInstructionsES'];
+    final strInstructionsDE = data['strInstructionsDE'];
+    final strInstructionsIT = data['strInstructionsIT'];
+    final strDrinkThumb = data['strDrinkThumb'];
+    final strIngredient1 = data['strIngredient1'];
+    final strIngredient2 = data['strIngredient2'];
+    final strIngredient3 = data['strIngredient3'];
+    final strIngredient4 = data['strIngredient4'];
+    final strIngredient5 = data['strIngredient5'];
+    final strIngredient6 = data['strIngredient6'];
+    final strMeasure1 = data['strMeasure1'];
+    final strMeasure2 = data['strMeasure2'];
+    final strMeasure3 = data['strMeasure3'];
+    final strMeasure4 = data['strMeasure4'];
+    final strMeasure5 = data['strMeasure5'];
+    final strMeasure6 = data['strMeasure6'];
+    final strImageSource = data['strImageSource'];
+    final strImageAttribution = data['strImageAttribution'];
+    final strCreativeCommonsConfirmed = data['strCreativeCommonsConfirmed'];
+    final dateModified = data['dateModified'];
+
     return CocktailRecipeModel(
-        idDrink: idDrink, strInstructions: strInstructions);
+        idDrink: idDrink,
+        strDrink: strDrink,
+        strTags: strTags,
+        strVideo: strVideo,
+        strCategory: strCategory,
+        strIBA: strIBA,
+        strAlcoholic: strAlcoholic,
+        strGlass: strGlass,
+        strInstructions: strInstructions,
+        strInstructionsES: strInstructionsES,
+        strInstructionsDE: strInstructionsDE,
+        strInstructionsIT: strInstructionsIT,
+        strDrinkThumb: strDrinkThumb,
+        strIngredient1: strIngredient1,
+        strIngredient2: strIngredient2,
+        strIngredient3: strIngredient3,
+        strIngredient4: strIngredient4,
+        strIngredient5: strIngredient5,
+        strIngredient6: strIngredient6,
+        strMeasure1: strMeasure1,
+        strMeasure2: strMeasure2,
+        strMeasure3: strMeasure3,
+        strMeasure4: strMeasure4,
+        strMeasure5: strMeasure5,
+        strMeasure6: strMeasure6,
+        strImageSource: strImageSource,
+        strImageAttribution: strImageAttribution,
+        strCreativeCommonsConfirmed: strCreativeCommonsConfirmed,
+        dateModified: dateModified);
   }
 }
