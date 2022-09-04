@@ -15,11 +15,12 @@ class ViewModelSkeleton<T extends vm.BaseViewModel> extends StatelessWidget {
     return ViewModelBuilder.reactive(
         viewModelBuilder: () => viewModel!,
         onModelReady: (T model) => model.initProvider(),
+        disposeViewModel: false,
         builder: (_, T model, __) => model.providerState == ProviderState.busy
             ? const Center(
                 child: CircularProgressIndicator(
                   backgroundColor: Colors.white,
-                  color: Colors.green,
+                  color: Colors.deepPurple,
                 ),
               )
             : builder!(model));

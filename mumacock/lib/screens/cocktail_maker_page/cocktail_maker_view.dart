@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class CocktailMakerView extends StatefulWidget {
   const CocktailMakerView({Key? key}) : super(key: key);
@@ -10,6 +11,8 @@ class CocktailMakerView extends StatefulWidget {
 class _CocktailMakerViewState extends State<CocktailMakerView> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Center(
+      child: Text("Maker View"),
+    );
   }
 }

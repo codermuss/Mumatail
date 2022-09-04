@@ -2,6 +2,7 @@ import 'package:get_it/get_it.dart';
 import 'package:mumacock/core/services/cocktail_recipe_service.dart';
 import 'package:mumacock/utils/constants/double_constants.dart';
 import 'package:mumacock/utils/constants/string_constants.dart';
+import 'package:mumacock/utils/helpers/router_helper.dart';
 import 'package:mumacock/utils/styles/custom_color_styles.dart';
 import 'package:mumacock/utils/styles/custom_text_styles.dart';
 
@@ -27,6 +28,9 @@ void initializeLocator() {
   getIt.registerLazySingleton(() => DoubleConstants());
   getIt.registerLazySingleton(() => CustomTextStyles());
   getIt.registerLazySingleton(() => CustomColorStyles(1));
+
+  //Helper Instances
+  getIt.registerLazySingleton(() => RouterHelper());
 }
 
 //done

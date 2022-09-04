@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mumacock/screens/cocktail_recipe_page/cocktail_recipe_view.dart';
 
 import 'utils/helpers/locator_helper.dart';
+import 'utils/helpers/router_helper.dart';
 
 void main() {
   initializeLocator();
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const CocktailRecipeView(),
+      onGenerateRoute: getIt<RouterHelper>().generateRoute,
     );
   }
 }

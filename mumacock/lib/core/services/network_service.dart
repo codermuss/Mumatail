@@ -10,9 +10,10 @@ class NetworkService extends BaseApiService {
       {bool convertToList = false}) async {
     try {
       http.Response _response = await http.get(Uri.parse(endPoint));
+      //modelFromJson
       return model.modelFromJson(jsonDecode(_response.body));
     } catch (e) {
-      // ignore: avoid_print
+      //error print
       print(e.toString());
     }
   }
